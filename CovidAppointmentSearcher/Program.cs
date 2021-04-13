@@ -9,7 +9,7 @@ namespace CovidAppointmentSearcher
         {
             Hyvee h = new Hyvee();
             var users = CovidSearchDatabase.GetAllUsers();
-            var mailRepository = new MailManager("imap.gmail.com", 993, true, "maddenpickems@gmail.com", "JtmajtDfdnas!23");
+            var mailRepository = new MailManager("imap.gmail.com", 993, true, "email", "password");
 
             foreach (var user in users)
             {
